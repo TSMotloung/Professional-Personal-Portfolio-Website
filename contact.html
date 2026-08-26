@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact | Teboho Motloung</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="particles" id="P"></div>
+<nav>
+  <a href="index.html" class="logo">&lt;TSM /&gt;</a>
+  <ul class="nav-links" id="NL">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="cv.html">CV / Resume</a></li>
+    <li><a href="contact.html"  class="active">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('NL').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="page">
+  <div class="container">
+    <p class="slabel rv">// lets connect</p>
+    <h1 class="stitle rv">Get In Touch</h1>
+    <div class="sdiv rv"></div>
+    <div class="ctgrid">
+      <div class="cti rv">
+        <h3>Let us Work Together</h3>
+        <p>I am actively seeking <strong style="color:var(--a)">entry-level, junior, or learnership opportunities</strong> in AI, Software Development, and Technology &mdash; or to discuss automation solutions via <strong>La Smarts Automation</strong>. Feel free to reach out!</p>
+        <div class="clinks">
+          <div class="clink">
+            <div class="cico ico-l"><i class="fa fa-location-dot"></i></div>
+            <div class="ctxt"><strong>Location</strong><span>3274 Hlatywayo St, Orlando, Soweto, Johannesburg</span></div>
+          </div>
+          <a href="https://lasmarts.com/" target="_blank" class="clink">
+            <div class="cico ico-w"><i class="fa fa-globe"></i></div>
+            <div class="ctxt"><strong>Agency Website</strong><span>lasmarts.com (La Smarts Automation)</span></div>
+          </a>
+          <a href="tel:+27691841723" class="clink">
+            <div class="cico ico-p"><i class="fa fa-phone"></i></div>
+            <div class="ctxt"><strong>Call / Phone</strong><span>+27 69 184 1723</span></div>
+          </a>
+          <a href="mailto:Tsmotlung@gmail.com" class="clink">
+            <div class="cico ico-e"><i class="fa fa-envelope"></i></div>
+            <div class="ctxt"><strong>Email Me</strong><span>Tsmotlung@gmail.com</span></div>
+          </a>
+          <a href="https://github.com/TSMotloung" target="_blank" class="clink">
+            <div class="cico ico-g"><i class="fab fa-github"></i></div>
+            <div class="ctxt"><strong>GitHub</strong><span>github.com/TSMotloung</span></div>
+          </a>
+          <a href="cv.html" class="clink">
+            <div class="cico ico-c"><i class="fa fa-file-invoice"></i></div>
+            <div class="ctxt"><strong>View Official CV</strong><span>Printable &amp; Digital Resume</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="cform rv">
+        <h3>Send a Message</h3>
+        <form id="CF" onsubmit="sendMsg(event)">
+          <div class="fg"><label>Your Name</label><input type="text" id="cN" placeholder="Jane Smith" required/></div>
+          <div class="fg"><label>Your Email</label><input type="email" id="cE" placeholder="jane@example.com" required/></div>
+          <div class="fg"><label>Subject</label><input type="text" id="cS" placeholder="Learnership / Job Opportunity / AI Automation Project" required/></div>
+          <div class="fg"><label>Message</label><textarea id="cM" placeholder="Hi Teboho, I saw your portfolio and would love to discuss an opportunity..." required></textarea></div>
+          <button type="submit" class="btn btnp" style="width:100%;justify-content:center"><i class="fa fa-paper-plane"></i>&nbsp;Send Message</button>
+          <div class="fsuc" id="FS">&#10003; Message composed! <a href="mailto:Tsmotlung@gmail.com">Click here</a> if it did not open.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="flogo">&lt;TSM /&gt;</div>
+  <div class="flinks">
+    <a href="mailto:Tsmotlung@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+    <a href="tel:+27691841723" title="Call / Phone"><i class="fa fa-phone"></i></a>
+    <a href="https://lasmarts.com/" target="_blank" title="La Smarts Automation Agency"><i class="fa fa-globe"></i></a>
+    <a href="https://github.com/TSMotloung" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="cv.html" title="View CV"><i class="fa fa-file-invoice"></i></a>
+  </div>
+  <p>&copy; 2026 Teboho Motloung &middot; Founder of La Smarts Automation &middot; AI Specialist</p>
+  <p style="margin-top:.3rem;font-size:.78rem;color:var(--tm)">
+    <i class="fa fa-location-dot" style="color:var(--amber);margin-right:.3rem"></i>Orlando, Soweto, Johannesburg &middot; 
+    <a href="tel:+27691841723">+27 69 184 1723</a> &middot; 
+    <a href="mailto:Tsmotlung@gmail.com">Tsmotlung@gmail.com</a> &middot;
+    <a href="https://lasmarts.com/" target="_blank" style="color:var(--emerald);font-weight:600">lasmarts.com</a>
+  </p>
+</footer>
+<button class="btt" id="BTT" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa fa-arrow-up"></i></button>
+<script>
+function sendMsg(e){
+  e.preventDefault();
+  var n=document.getElementById("cN").value;
+  var em=document.getElementById("cE").value;
+  var s=document.getElementById("cS").value;
+  var m=document.getElementById("cM").value;
+  window.location.href="mailto:Tsmotlung@gmail.com?subject="+encodeURIComponent(s+" - from "+n)+"&body="+encodeURIComponent("From: "+n+"\nEmail: "+em+"\n\n"+m);
+  document.getElementById("FS").style.display="block";
+}
+</script>
+<script>
+(function(){
+  var c=document.getElementById("P");
+  if(!c)return;
+  var cols=["rgba(79,142,247,.6)","rgba(168,85,247,.5)","rgba(79,142,247,.3)","rgba(79,142,247,.2)"];
+  for(var i=0;i<28;i++){
+    var el=document.createElement("div");el.className="particle";
+    var s=Math.random()*4+2;
+    el.style.cssText="width:"+s+"px;height:"+s+"px;left:"+(Math.random()*100)+"%;background:"+cols[Math.floor(Math.random()*4)]+";animation-duration:"+(Math.random()*15+10)+"s;animation-delay:"+(Math.random()*12)+"s;";
+    c.appendChild(el);
+  }
+})();
+var rvs=document.querySelectorAll(".rv");
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add("vis");});},{threshold:.1});
+rvs.forEach(function(el){obs.observe(el);});
+window.addEventListener("scroll",function(){
+  var b=document.getElementById("BTT");
+  if(b) b.classList.toggle("show",scrollY>300);
+});
+</script>
+</body>
+</html>
